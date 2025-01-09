@@ -58,8 +58,12 @@ IMC = (float(peso)/float(altura) ** 2)
 print(f"Certo, {nome}. Você tem {altura}m de altura e pesa {peso}kg.\nO valor do seu IMC é: {IMC:.2f} ")
 
 if IMC < 18.5:
-    print("Magreza")
+    print("Indivíduo com magreza")
 elif 18.5 <= IMC >= 24.9:
-    print("Saudável")
+    print("Indivíduo normal")
 elif 25.0 <= IMC >= 29.9:
-    print("Sobrepeso - Obesidade Grau 1")
+    print("indivíduo com sobrepeso - Obesidade Grau 1")
+elif 30.0 <= IMC >= 39.9:
+    print("Indivíduo obeso - Obesidade Grau 2")
+elif 40.0 <= IMC:
+    print("Indivíduo com obesidade grave - Obesidade Grau 3")
