@@ -54,16 +54,16 @@ while condicao_peso:
         print("O valor do peso deve obdecer o formato de duas casas decimais depois do ponto. Ex 75.93")
 
 IMC = (float(peso)/float(altura) ** 2)
-
+print(type(IMC))
 print(f"Certo, {nome}. Você tem {altura}m de altura e pesa {peso}kg.\nO valor do seu IMC é: {IMC:.2f} ")
 
-if IMC < 18.5:
+if IMC < 18.50:
     print("Indivíduo com magreza")
-elif 18.5 <= IMC >= 24.9:
+elif 18.50 <= IMC >= 24.90:
     print("Indivíduo normal")
-elif 25.0 <= IMC >= 29.9:
+elif 25.00 <= IMC >= 29.90:
     print("indivíduo com sobrepeso - Obesidade Grau 1")
-elif 30.0 <= IMC >= 39.9:
+elif 30.00 <= IMC >= 39.90:
     print("Indivíduo obeso - Obesidade Grau 2")
-elif 40.0 <= IMC:
+elif 40.00 <= IMC:
     print("Indivíduo com obesidade grave - Obesidade Grau 3")
