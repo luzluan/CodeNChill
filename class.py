@@ -1,4 +1,6 @@
-class User:
-    def __init__ (self, nome, email):
+class Usuario:
+    def __init__ (self, nome, contato, PA, glicemia):
         self.nome = nome
-        self.email = email
+        self.contato = contato
+        self.PA = PA
+        self.glicemia = glicemia
